@@ -1,0 +1,39 @@
+### Send GET request for fetch all user
+GET http://localhost:8080/bootjs/api/users
+Accept: */*
+Cache-Control: no-cache
+
+### Send GET request for fetch 1 user
+GET http://localhost:8080/bootjs/api/user/1
+Accept: */*
+Cache-Control: no-cache
+
+### Send POST request for save new User
+POST http://localhost:8080/bootjs/api/user
+Content-Type: application/json
+
+{
+  "name": "public@gmail.com",
+  "age": 25,
+  "salary": 250
+
+}
+
+### Send PUT request for update new User
+PUT http://localhost:8080/bootjs/api/user/1
+Content-Type: application/json
+
+{
+  "name": "nabeel.amd93@gmail.com",
+  "age": 25,
+  "salary": 25000
+
+}
+
+### Send DELETE request for delete User
+DELETE http://localhost:8080/bootjs/api/user/1
+Content-Type: application/json
+
+### Send DELETE request for delete new User
+DELETE http://localhost:8080/bootjs/api/user/deletes
+Content-Type: application/json

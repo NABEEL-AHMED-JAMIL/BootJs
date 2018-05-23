@@ -1,0 +1,25 @@
+{
+  "$schema": "",
+  "title": "Test Demo",
+  "description": "A product from the catalog",
+  "type": "object",
+  "properties" : {
+    "userId": {
+      "description": "The unique identifier for a user",
+      "type": "long"
+    },
+    "name": {
+      "description": "Name of the user",
+      "type": "string"
+    },
+    "age": {
+      "description": "Age of the user",
+      "type": "integer"
+    },
+    "salary": {
+      "description": "Salary of the user",
+      "minimum": 0,
+      "type": "double"
+    }
+  }
+}
